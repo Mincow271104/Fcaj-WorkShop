@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm những chức năng còn lại
+* lên kế hoạch chuyển đổi công nghệ sang dịch vụ AWS
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2,3,4,5,6   | - Tích hợp Trí tuệ nhân tạo và các tính năng nâng cao: <br> **1. Các tính năng thực hiện:** <br> + Kiểm duyệt video tinh vi bằng AI: Phân tích sâu tiêu đề, mô tả và nội dung nhằm chặn các video giải trí tinh vi lách luật. <br> + Theo dõi hiện diện người dùng: Nhận diện khuôn mặt qua WebCam, phát cảnh báo và tự động hủy bộ đếm nếu người dùng rời khỏi màn hình quá lâu. <br> + Tự động tắt ứng dụng giải trí: Quét hệ thống và tắt ngang các phần mềm mạng xã hội hoặc giải trí độc lập cài trên máy tính. <br> + Chế độ kỷ luật thép: Khóa hoàn toàn nút tạm dừng hoặc dừng, buộc tập trung cho đến khi hết giờ. <br> **2. Công nghệ áp dụng:** <br> + AI & LLMs (Phân loại video): Local AI với Ollama và Cloud AI với Groq API. <br> + Computer Vision (Face Tracking): Google MediaPipe qua WebAssembly.| 01/06/2026   | 05/06/2026      |
+| 7, CN | - Lên kế hoạch chuyển đổi (Migration) sang dịch vụ AWS: <br> + Phân tích kiến trúc hiện tại để map với các dịch vụ AWS phù hợp (EC2, S3, API Gateway, DynamoDB...). <br> + Lên danh sách các tài nguyên cần tạo. | 06/06/2026 | 07/06/2026 |
 
 
 ### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Tích hợp thành công mô hình ngôn ngữ lớn (Local AI với Ollama và Cloud AI với Groq API) vào ứng dụng để phân loại và kiểm duyệt tự động nội dung video YouTube có độ chính xác cao.
+* Ứng dụng thành công công nghệ Computer Vision (Google MediaPipe chạy qua WebAssembly) để theo dõi sự hiện diện của người dùng (AFK Tracking) theo thời gian thực mà vẫn đảm bảo hiệu suất máy tính.
+* Triển khai hoàn chỉnh cơ chế Native App Killer, cho phép ứng dụng quét và tự động đóng các tiến trình giải trí (như Facebook, TikTok) chạy độc lập trên hệ điều hành Windows.
+* Hoàn thiện tính năng kỷ luật thép (Hard Mode), buộc người dùng phải tuân thủ nghiêm ngặt thời gian tập trung đã đặt ra.
+* Đã hoàn thành bản phân tích kiến trúc và lên kế hoạch sơ bộ để tiến hành chuyển đổi (Migration) các thành phần lưu trữ, backend của ứng dụng lên hạ tầng đám mây AWS cho giai đoạn tiếp theo.
 
 

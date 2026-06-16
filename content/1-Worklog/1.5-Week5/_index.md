@@ -5,53 +5,22 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Implement the remaining features
+* Plan the technology migration to AWS services
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be implemented this week:
+| Day | Task | Start Date | Completion Date | Resources |
+| --- | --- | --- | --- | --- |
+| Mon, Tue, Wed, Thu, Fri | - Integrate Artificial Intelligence and advanced features: <br> **1. Implemented features:** <br> + Sophisticated video moderation with AI: Deeply analyze title, description, and content to block subtle entertainment videos bypassing rules. <br> + User presence tracking: Facial recognition via WebCam, issue warnings and automatically cancel the timer if the user leaves the screen for too long. <br> + Automatic closing of entertainment apps: Scan the system and forcibly close independent social media or entertainment software installed on the computer. <br> + Hard discipline mode: Completely lock the pause or stop button, forcing focus until the time is up. <br> **2. Applied technologies:** <br> + AI & LLMs (Video classification): Local AI with Ollama and Cloud AI with Groq API. <br> + Computer Vision (Face Tracking): Google MediaPipe via WebAssembly. | 01/06/2026 | 05/06/2026 | |
+| Sat, Sun | - Plan the migration to AWS services: <br> + Analyze the current architecture to map with appropriate AWS services (EC2, S3, API Gateway, DynamoDB...). <br> + Create a list of resources to be provisioned. | 06/06/2026 | 07/06/2026 | |
 
 
 ### Week 5 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully integrated large language models (Local AI with Ollama and Cloud AI with Groq API) into the application to automatically classify and moderate YouTube video content with high accuracy.
+* Successfully applied Computer Vision technology (Google MediaPipe running via WebAssembly) to track user presence (AFK Tracking) in real-time while ensuring computer performance.
+* Fully deployed the Native App Killer mechanism, allowing the application to scan and automatically close entertainment processes (like Facebook, TikTok) running independently on the Windows operating system.
+* Perfected the hard discipline feature (Hard Mode), forcing users to strictly adhere to the set focus time.
+* Completed the architecture analysis and preliminary plan to migrate the application's storage and backend components to AWS cloud infrastructure for the next phase.
