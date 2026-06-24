@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thay đổi đầu ra của dự án theo DB mới của team
+* Tối ưu cách dự án sử dụng AI
+* Nâng cấp AI Block cho website
+
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
+| 2,3   | - Tái cấu trúc dữ liệu đầu vào (Input) và đầu ra (Output) phía Client để tương thích hoàn toàn với cấu trúc schema mới của cơ sở dữ liệu Amazon DynamoDB. <br>- Kiểm thử tính đúng đắn của dữ liệu khi đồng bộ thông qua API Gateway. | 15/06/2026   | 16/06/2026      | |
+| 4,5,6,7   | - Tối ưu hóa hiệu suất gọi mô hình AI phân loại, xây dựng cơ chế cache kết quả để giảm thiểu số lượng request lên Cloud API (Groq) và Local AI (Ollama). <br>- Nghiên cứu và tích hợp thêm tính năng lọc thông minh sử dụng AI để tự động phân tích và chặn các đường dẫn (Web URLs) không xác định nằm ngoài danh sách tĩnh. | 17/06/2026   | 20/06/2026      | |
+ 
+ 
+ 
 ### Kết quả đạt được tuần 7:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành việc điều chỉnh cấu trúc dữ liệu Input/Output phía Client, giúp hệ thống đồng bộ dữ liệu người dùng, nhiệm vụ và lịch sử học tập trơn tru với cơ sở dữ liệu Amazon DynamoDB mới.
+* Tối ưu hóa thành công cơ chế hoạt động của AI phân loại nội dung video, giảm thiểu số lượng API requests không cần thiết và cải thiện đáng kể tốc độ phản hồi của hệ thống.
+* Phát triển thành công tính năng lọc nâng cao (AI Block) cho website, giúp tự động nhận dạng và đưa ra quyết định chặn/cho phép đối với các trang web lạ (Web URLs không xác định) dựa trên phân tích ngữ cảnh nội dung.
