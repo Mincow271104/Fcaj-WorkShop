@@ -1,57 +1,32 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
+date: 2026-7-6
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete and optimize the Focus Mode feature combined with Browser Extension and AI system.
+* Successfully integrate AI models on the AWS Bedrock platform (Nova Micro, Nova Lite) to power YouTube Blocker and StudyPlanner.
+* Enhance user experience (UX/UI) and thoroughly handle API rate-limiting edge cases.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Integrated Amazon Bedrock AI (Nova Micro, Nova Lite) for the application <br> - Implemented auto-retry mechanism (handling 429, 503 limits) <br> - Improved Focus Mode UI (separated Casual/Rank modes, added Custom time limits) <br> - Displayed detailed Extension and AI status <br> - Cleaned up Settings UI | 07/06/2026 | 07/06/2026      | |
+| 3   | - Update and optimize subsequent modules...  | 07/07/2026 | 07/07/2026      | |
+| 4   | - Update and optimize subsequent modules...  | 07/08/2026 | 07/08/2026      | |
+| 5   | - Update and optimize subsequent modules...  | 07/09/2026 | 07/09/2026      | |
+| 6   | - Finalize and test the application...       | 07/10/2026 | 07/10/2026      | |
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully integrated Amazon Bedrock AI using Nova Micro and Nova Lite models as robust alternatives to Gemini.
+* Built a stable API calling flow with an intelligent auto-retry mechanism when the server is overloaded (503) or quota exceeded (429).
+* Re-designed Focus Mode interface to be more user-friendly (clear division of Casual and Rank modes, preventing overly short durations).
+* Provided transparent system status for users (showing which browsers the Extension has detected, and which provider's AI model is active).
+* Optimized Settings UI by removing unnecessary configurations (like FaceTracking LLM).
