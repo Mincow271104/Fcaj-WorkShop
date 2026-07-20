@@ -1,125 +1,55 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-05-23
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Bài thu hoạch “FCAJ Community Day”
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Góc Nhìn Tổng Quan
 
-### Mục Đích Của Sự Kiện
+Khi đến với sự kiện FCAJ Community Day, em cảm nhận rõ mục tiêu của ban tổ chức là tạo ra một không gian kết nối và chia sẻ những xu hướng công nghệ mới nhất. Ngồi ở vị trí khán giả, em đã có cơ hội lắng nghe và quan sát cách các chuyên gia tiếp cận với Mô hình ngôn ngữ lớn (LLM), hệ thống AI đa tác nhân, cũng như cách họ giải quyết các bài toán hạ tầng thực tế trên đám mây.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Những Chủ Đề Thu Hút Em Nhất Trong Buổi Chia Sẻ
 
-### Danh Sách Diễn Giả
+Xuyên suốt buổi event, em đã cẩn thận ghi chép lại những điểm thú vị từ các phiên trình bày:
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### Kiến trúc và Hoạt động của AI
+- **Deep dive talk: How LLM actually works?**: Em thực sự bị cuốn hút khi người nói bóc tách cơ chế hoạt động bên trong của các LLM thay vì chỉ nói về cách dùng bề nổi. Nhìn các sơ đồ kiến trúc lõi được trình chiếu, em hiểu rõ hơn cách máy học xử lý luồng thông tin.
+- **Enterprise-Grade Multi-Agent System**: Diễn giả đã mang đến một góc nhìn rất mới cho em về cách chia nhỏ hệ thống AI thành nhiều "agent" (tác nhân) tương tác với nhau, giúp giải quyết các bài toán phức tạp ở quy mô lớn.
 
-### Nội Dung Nổi Bật
+#### Ứng dụng AI vào Thực tiễn
+- **Xây dựng "Second Brain"**: Lắng nghe phần chia sẻ này, em thấy rất tâm đắc với khái niệm tạo ra một "bộ não thứ hai" bằng AI để sắp xếp và truy xuất kiến thức cá nhân/đội nhóm một cách logic.
+- **Friendly AI Assistant**: Các anh/chị trình bày đã làm rõ cách Amazon hỗ trợ xây dựng các trợ lý ảo một cách nhanh chóng, tối ưu hóa rất nhiều thao tác thủ công.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Kỹ thuật Hạ tầng & Câu chuyện Thực chiến
+- **From Edge To Origin**: Theo dõi phần vẽ luồng dữ liệu, em nắm được cách CloudFront đứng ở vị trí tiền phương (Edge) để bảo vệ và giảm tải cho máy chủ gốc (Origin) hiệu quả ra sao.
+- **36 hrs with LotusHacks - Building UTMorpho**: Đây có lẽ là phần truyền cảm hứng nhất với em. Nghe các bạn kể lại hành trình 36 tiếng vắt kiệt sức lực, cách họ xử lý lỗi phút chót và quản lý áp lực thực sự khiến em rất đồng cảm và nể phục.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+### Những Bài Học Em Rút Ra Từ Sự Kiện
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Tư Duy Nhìn Sâu Vào Bản Chất
+- Qua các bài trình bày, em nhận ra mình không nên chỉ dừng ở việc "biết dùng API" của AI, mà cần hiểu nguyên lý bên dưới. Tư duy chia nhỏ bài toán thành các "Agent" cũng là một hướng đi em thấy rất thông minh và dễ mở rộng.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### Kiến Trúc Đám Mây
+- Em hiểu rõ hơn bức tranh tổng thể về cách mạng phân phối nội dung (CDN) hoạt động, và vì sao CloudFront lại là một "tấm khiên" cũng như "máy gia tốc" quan trọng cho bất kỳ ứng dụng nào triển khai trên AWS.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Kỹ Năng Mềm & Thực Chiến
+- Lắng nghe những khó khăn trong cuộc thi Hackathon giúp em nhận ra tầm quan trọng của việc ra quyết định nhanh, lên concept và triển khai MVP (sản phẩm khả dụng tối thiểu) thay vì cố làm mọi thứ hoàn hảo từ đầu.
 
-#### Domain-Driven Design (DDD)
+### Dự Định Áp Dụng Vào Thực Tế Của Bản Thân
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- **Cho dự án Uchimi StudyGamification**: Em dự định sẽ đề xuất với nhóm áp dụng mô hình LLM và xây dựng một AI Assistant cơ bản để hỗ trợ tính năng học tập của dự án, lấy cảm hứng trực tiếp từ các phiên demo hôm nay.
+- **Về mặt hạ tầng**: Từ những ghi chép về "Edge To Origin", em sẽ thử tìm hiểu và cấu hình CloudFront để tăng tốc độ tải trang cho hệ sinh thái Gamification mà nhóm đang làm.
+- **Xây dựng "Second Brain" cho team**: Em rất muốn thử áp dụng tư duy quản lý tri thức đã nghe để tạo ra một không gian lưu trữ tài liệu, giúp team thực tập dễ dàng tracking tiến độ và tìm lại log công việc.
 
-#### Event-Driven Architecture
+### Cảm Nhận Cá Nhân Khi Ngồi Dưới Khán Đài
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+Có mặt tại **FCAJ Community Day** là một trải nghiệm rất "đã". Khác với việc tự đọc tài liệu ở nhà, việc được trực tiếp nghe các chuyên gia giải thích, xem họ vẽ sơ đồ và mô tả luồng hệ thống mang lại cảm giác dễ tiếp thu hơn rất nhiều. 
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Không khí của buổi workshop cực kỳ cởi mở. Mọi người không chỉ nói về thành công mà còn chia sẻ cả những lỗi sai (như trong phần kể về cuộc thi Hackathon), điều đó làm em thấy rất gần gũi và thực tế. Nhìn cách các anh/chị đi trước nhiệt huyết với công nghệ, em cảm thấy được tiếp thêm rất nhiều động lực để hoàn thành tốt kỳ thực tập này.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Hình ảnh tại sự kiện](https://res.cloudinary.com/dqblg6ont/image/upload/v1784288789/1784285666637_131522751450407846_5871582704640269321_30b2a5b7acd129d43716b0fbd7fb8d34_dv6lta.jpg)

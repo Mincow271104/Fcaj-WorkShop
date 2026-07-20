@@ -1,33 +1,57 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-07-17
 weight: 5
-chapter: false
+chapter: true
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Uchimi StudyGamification - Ứng dụng học tập kết hợp AI và Gamification
 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+Chào mừng anh/ chị đã đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và nền tảng **AWS Serverless** ở phía Server, hướng đến mục tiêu tối ưu hóa chi phí vận hành nhưng vẫn mang lại trải nghiệm học tập tuyệt vời, giúp quá trình tự học không còn gò bó hay mang tính ép buộc.
 
-#### Tổng quan
+## Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+Trong thời đại công nghệ số phát triển mạnh mẽ, thách thức lớn nhất của quá trình tự học không còn nằm ở việc khó tiếp cận kiến thức. Khó khăn thực sự nằm ở **khả năng duy trì sự tập trung lâu dài và tính kỷ luật** để việc học không bị gián đoạn. Người học rất dễ bị xao nhãng bởi vô vàn cám dỗ khi sử dụng máy tính, khiến việc hình thành một thói quen học tập bền vững trở nên vô cùng khó khăn.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+**Uchimi StudyGamification** được ra đời nhằm giải quyết triệt để bài toán này. Mục tiêu cốt lõi của dự án là biến hành động "mở máy tính lên học mỗi ngày" thành một thói quen tự nhiên, bền vững và đầy hứng thú. 
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Hệ thống mang đến một giải pháp toàn diện, là sự giao thoa hoàn hảo giữa **kỷ luật thép** và **giải trí lành mạnh**:
+*   **Học tập kỷ luật cùng AI:** Áp dụng công nghệ AI Scan để theo dõi (track) và ngăn chặn ngay lập tức các hành vi xao nhãng khi người dùng thao tác trên máy tính, giúp duy trì sự tập trung cao độ.
+*   **Hệ sinh thái giải trí (Minigame):** Sau những giờ học tập căng thẳng, người dùng sẽ được bước vào không gian thư giãn với các minigame thú vị. Sự kết hợp này biến những áp lực học hành thành phần thưởng xứng đáng, giúp tái tạo năng lượng hiệu quả.
 
-#### Nội dung
+Bằng cách áp dụng vòng lặp **Kỷ luật → Hành động → Phản hồi → Phần thưởng**, dự án không chỉ giữ chân người dùng mà còn từng bước kiến tạo nên một phong cách học tập hoàn toàn mới.
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+## Mục lục kiến trúc
+
+Tài liệu này sẽ đi sâu vào việc phân tích và hướng dẫn chi tiết các khía cạnh kỹ thuật của dự án, bao gồm:
+
+1. **[Bối cảnh dự án](5.1-Overview/)**
+   * Phân tích bối cảnh ra đời, mục tiêu cốt lõi và đối tượng người dùng hướng đến.
+   * Chi tiết bài toán kỹ thuật cần giải quyết để đáp ứng nhu cầu thực tiễn.
+2. **[Kiến trúc dự án](5.2-Architecture/)**
+   * Phân tích lý do lựa chọn kiến trúc AWS Serverless và rào cản kỹ thuật.
+   * Cách thiết lập phân quyền, rào chắn bảo mật và tích hợp các dịch vụ bên thứ 3.
+   * Chi tiết các dịch vụ AWS được sử dụng, cách xây dựng và hình ảnh Sơ đồ kiến trúc tổng thể [drawio].
+3. **[Học tập cùng với AI](5.3-Study_with_AI/)**
+   * Mô tả chi tiết quy trình hoạt động của trợ lý AI và công nghệ AI Scan.
+   * Cách AI xử lý dữ liệu, lợi ích của các model/extension được sử dụng và lý do phương pháp này mang lại hiệu quả cao.
+   * Hướng dẫn quy trình setup từng loại AI, các chế độ học tập và hệ thống nhiệm vụ.
+4. **[Hệ sinh thái game](5.4-Gamification/)**
+   * Phân tích luồng chuyển tiếp mượt mà từ phân hệ Học tập sang Minigame.
+   * Mô tả chung về cơ chế hoạt động của các minigame và các chức năng cốt lõi.
+   * Hệ thống xếp hạng (Leaderboard) giúp tăng tính cạnh tranh và giữ chân người dùng.
+5. **[Triển khai và Vận hành](5.5-Deployment/)**
+   * Hướng dẫn chi tiết quy trình triển khai ứng dụng (cách đóng gói bản build, cách tải về và cài đặt).
+   * Mô tả luồng thao tác thực tế và cách người dùng sử dụng hệ thống.
+6. **[Định hướng và phát triển](5.6-Direction/)**
+   * Nhìn nhận, đánh giá các điểm còn hạn chế cần cải thiện.
+   * Lộ trình phát triển và các chức năng dự kiến sẽ được tích hợp trong tương lai.
+
+---
+
+## Mã nguồn
+
+- **Frontend (ReactJS + Electron):** https://github.com/KhangChinh/AWSStudy-Play
+- **Backend (AWS Serverless):** https://github.com/KhangChinh/AWSServerless

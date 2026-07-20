@@ -1,126 +1,55 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-05-23
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# "FCAJ Community Day" Reflection Report
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### Overview
 
-### Event Objectives
+When attending the FCAJ Community Day event, I clearly felt the organizers' goal of creating a space to connect and share the latest technology trends. Sitting in the audience, I had the opportunity to listen and observe how experts approach Large Language Models (LLMs), multi-agent AI systems, and how they solve real-world cloud infrastructure problems.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### The Most Engaging Topics During the Sessions
 
-### Speakers
+Throughout the event, I carefully took notes on the interesting points from the presentations:
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+#### AI Architecture and Operations
+- **Deep dive talk: How LLM actually works?**: I was really drawn in when the speaker broke down the inner workings of LLMs instead of just talking about surface-level usage. Seeing the core architecture diagrams on the screen helped me better understand how machine learning processes information flows.
+- **Enterprise-Grade Multi-Agent System**: The speaker gave me a very new perspective on how to break down an AI system into multiple interacting "agents" to solve complex problems at a large scale.
 
-### Key Highlights
+#### Practical AI Applications
+- **Building a "Second Brain"**: Listening to this part, I really liked the concept of creating a "second brain" using AI to logically organize and retrieve personal/team knowledge.
+- **Friendly AI Assistant**: The presenters clarified how Amazon supports building virtual assistants quickly, optimizing many manual tasks.
 
-#### Identifying the drawbacks of legacy application architecture
+#### Infrastructure Engineering & Real-world Stories
+- **From Edge To Origin**: By following the data flow diagrams, I grasped how CloudFront stands at the frontline (Edge) to effectively protect and reduce the load on the origin server.
+- **36 hrs with LotusHacks - Building UTMorpho**: This was probably the most inspiring part for me. Hearing the team recount their exhausting 36-hour journey, how they handled last-minute bugs, and managed pressure really made me empathize and admire them.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+### Lessons I Learned from the Event
 
-#### Transitioning to modern application architecture – Microservices
+#### The Mindset of Understanding the Core
+- Through the presentations, I realized I shouldn't just stop at "knowing how to use the API" of AI, but I need to understand the underlying principles. The mindset of breaking down problems into "Agents" is also a very smart and scalable approach.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Cloud Architecture
+- I gained a better overall picture of how a Content Delivery Network (CDN) works, and why CloudFront is an important "shield" as well as an "accelerator" for any application deployed on AWS.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Soft Skills & Practical Experience
+- Listening to the difficulties in the Hackathon helped me realize the importance of quick decision-making, conceptualizing, and deploying an MVP (Minimum Viable Product) instead of trying to make everything perfect from the start.
 
-#### Domain-Driven Design (DDD)
+### My Plans for Practical Application
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+- **For the Uchimi StudyGamification project**: I plan to propose applying the LLM model to the team and building a basic AI Assistant to support the project's learning features, directly inspired by today's demo sessions.
+- **Regarding infrastructure**: From my notes on "Edge To Origin", I will try to learn and configure CloudFront to increase the page load speed for the Gamification ecosystem our team is building.
+- **Building a "Second Brain" for the team**: I really want to try applying the knowledge management mindset I heard to create a document storage space, helping the internship team easily track progress and find work logs.
 
-#### Event-Driven Architecture
+### Personal Thoughts as an Attendee
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+Being present at **FCAJ Community Day** was a great experience. Unlike reading documents alone at home, listening directly to experts explain, seeing them draw diagrams and describe system flows made it much easier to absorb the knowledge. 
 
-#### Compute Evolution
+The atmosphere of the workshop was extremely open. People didn't just talk about successes but also shared their mistakes (like in the Hackathon story), which made me feel very close and realistic. Seeing how passionate the seniors are about technology gave me a lot of motivation to do my best in this internship.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Some pictures from the event
+![Pictures at the event](https://res.cloudinary.com/dqblg6ont/image/upload/v1784288789/1784285666637_131522751450407846_5871582704640269321_30b2a5b7acd129d43716b0fbd7fb8d34_dv6lta.jpg)
