@@ -16,11 +16,12 @@ pre: " <b> 1.11. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Lên kế hoạch chi tiết, phân tích yêu cầu và phác thảo giải pháp kỹ thuật cho chức năng Block App | 13/07/2026   | 13/07/2026      | |
-| 3   | - Thiết kế UI/UX và lập trình tích hợp chức năng hiển thị pet (thú cưng ảo) trên giao diện chính | 14/07/2026   | 14/07/2026      | |
-| 4   | - Bổ sung và tinh chỉnh animation mượt mà cho 2 nhân vật pet khác nhau để tăng tính tương tác | 15/07/2026   | 15/07/2026      | |
-| 5   | - Cấu hình bucket AWS S3 và triển khai upload toàn bộ tài nguyên hình ảnh, dữ liệu của pet lên Cloud | 16/07/2026   | 16/07/2026      | |
-| 6   | - Tối ưu hóa quá trình tải dữ liệu từ S3, fix bugs và kiểm thử trải nghiệm người dùng toàn bộ hệ thống | 17/07/2026   | 17/07/2026      | |
+| Mon | - Lên kế hoạch chi tiết, phân tích yêu cầu và phác thảo giải pháp kỹ thuật cho chức năng Block App | 13/07/2026   | 13/07/2026      | |
+| Tue | - Thiết kế UI/UX và lập trình tích hợp chức năng hiển thị pet (thú cưng ảo) trên giao diện chính | 14/07/2026   | 14/07/2026      | |
+| Wed | - Bổ sung và tinh chỉnh animation mượt mà cho 2 nhân vật pet khác nhau để tăng tính tương tác | 15/07/2026   | 15/07/2026      | |
+| Thu | - Cấu hình bucket AWS S3 và triển khai upload toàn bộ tài nguyên hình ảnh, dữ liệu của pet lên Cloud | 16/07/2026   | 16/07/2026      | |
+| Fri | - Tối ưu hóa quá trình tải dữ liệu từ S3 và khắc phục các lỗi (fix bugs) phát sinh | 17/07/2026   | 17/07/2026      | |
+| Sat | - Khảo sát và kiểm thử trải nghiệm người dùng, đảm bảo tính năng hoạt động mượt mà | 18/07/2026 | 18/07/2026 | |
 
 ### Kết quả đạt được tuần 11:
 

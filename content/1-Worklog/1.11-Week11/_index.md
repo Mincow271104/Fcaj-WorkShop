@@ -16,11 +16,12 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Create a detailed plan, analyze requirements, and outline technical solutions for the Block App feature | 07/13/2026   | 07/13/2026      | |
-| 3   | - Design UI/UX and develop the virtual pet display functionality on the main interface | 07/14/2026   | 07/14/2026      | |
-| 4   | - Add and fine-tune smooth animations for 2 distinct pet characters to increase interactivity | 07/15/2026   | 07/15/2026      | |
-| 5   | - Configure AWS S3 bucket and deploy all pet image resources and data to the Cloud | 07/16/2026   | 07/16/2026      | |
-| 6   | - Optimize data loading from S3, fix bugs, and conduct comprehensive user experience testing | 07/17/2026   | 07/17/2026      | |
+| Mon | - Create a detailed plan, analyze requirements, and outline technical solutions for the Block App feature | 07/13/2026   | 07/13/2026      | |
+| Tue | - Design UI/UX and develop the virtual pet display functionality on the main interface | 07/14/2026   | 07/14/2026      | |
+| Wed | - Add and fine-tune smooth animations for 2 distinct pet characters to increase interactivity | 07/15/2026   | 07/15/2026      | |
+| Thu | - Configure AWS S3 bucket and deploy all pet image resources and data to the Cloud | 07/16/2026   | 07/16/2026      | |
+| Fri | - Optimize data loading from S3 and fix any arising bugs | 07/17/2026   | 07/17/2026      | |
+| Sat | - Conduct comprehensive user experience testing to ensure smooth operations | 07/18/2026 | 07/18/2026 | |
 
 ### Week 11 Achievements:
 

@@ -15,11 +15,12 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Configure IAM Roles and Policies across 2 AWS accounts to establish Cross-Account access for Amazon Bedrock <br> - Integrate Amazon Bedrock AI (Nova Micro, Nova Lite) as an alternative or alongside Gemini | 07/06/2026   | 07/06/2026      | |
-| 3   | - Implement a smart auto-retry mechanism to handle API overload errors (429, 503) for stability | 07/07/2026   | 07/07/2026      | |
-| 4   | - Improve Focus Mode UI by separating Casual and Rank modes clearly, and add Custom time limit settings | 07/08/2026   | 07/08/2026      | |
-| 5   | - Develop a transparent status display for the Browser Extension and the currently active AI model | 07/09/2026   | 07/09/2026      | |
-| 6   | - Clean up Settings UI by removing unnecessary configurations (like FaceTracking) and perform system-wide testing | 07/10/2026   | 07/10/2026      | |
+| Mon | - Configure IAM Roles and Policies across 2 AWS accounts to establish Cross-Account access for Amazon Bedrock <br> - Integrate Amazon Bedrock AI (Nova Micro, Nova Lite) as an alternative or alongside Gemini | 07/06/2026   | 07/06/2026      | |
+| Tue | - Implement a smart auto-retry mechanism to handle API overload errors (429, 503) for stability | 07/07/2026   | 07/07/2026      | |
+| Wed | - Improve Focus Mode UI by separating Casual and Rank modes clearly, and add Custom time limit settings | 07/08/2026   | 07/08/2026      | |
+| Thu | - Develop a transparent status display for the Browser Extension and the currently active AI model | 07/09/2026   | 07/09/2026      | |
+| Fri | - Clean up Settings UI by removing unnecessary configurations (like FaceTracking) | 07/10/2026   | 07/10/2026      | |
+| Sat | - Perform end-to-end system testing, optimize performance and fix bugs | 07/11/2026 | 07/11/2026 | |
 
 ### Week 10 Achievements:
 

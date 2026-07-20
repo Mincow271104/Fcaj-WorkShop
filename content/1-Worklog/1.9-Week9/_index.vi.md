@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 9"
 date: 2024-01-01
 weight: 1
@@ -16,11 +16,11 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Phân tích yêu cầu và thiết kế kiến trúc tổng thể cho chức năng AI Study Planner (gồm các tab Chat, Plan, Quiz và Settings) <br> - Thiết kế cấu trúc cơ sở dữ liệu để lưu trữ lộ trình học  | 29/06/2026   | 29/06/2026      | |
-| 3   | - Phát triển giao diện tư vấn học tập ChatTab hỗ trợ trò chuyện thu thập thông tin <br> - Viết service Backend aiStudyService.js kết nối API Gemini và Ollama để xử lý hội thoại | 30/06/2026   | 30/06/2026      ||
-| 4   | - Xây dựng giao diện hiển thị lộ trình PlanTab cho phép quản lý tiến độ học tập <br> - Phát triển module đọc tài liệu học tập (PDF, DOCX, TXT) hỗ trợ nạp ngữ cảnh vào bài học      | 01/07/2026   | 01/07/2026     |
-| 5   | - Phát triển tính năng tự động tạo câu hỏi ôn tập ôn tập QuizTab.jsx tính điểm thưởng Knowledge Points (KP) <br> - Tái cấu trúc và gộp chung toàn bộ cài đặt AI vào một mục quản trị duy nhất | 02/07/2026   | 02/07/2026      |        |
-| 6   | - Tối ưu hóa giao diện SCSS toàn bộ tính năng Study Planner <br> - Kiểm thử liên thông các luồng: Nhận tư vấn -> Tạo lộ trình -> Tải tài liệu -> Làm Quiz kiểm tra -> Tùy chỉnh cấu hình AI | 03/07/2026   | 03/07/2026      ||
+| Mon | - Phân tích yêu cầu và thiết kế kiến trúc tổng thể cho chức năng AI Study Planner (gồm các tab Chat, Plan, Quiz và Settings) <br> - Thiết kế cấu trúc cơ sở dữ liệu để lưu trữ lộ trình học  | 29/06/2026   | 29/06/2026      | |
+| Tue | - Phát triển giao diện tư vấn học tập ChatTab hỗ trợ trò chuyện thu thập thông tin <br> - Viết service Backend aiStudyService.js kết nối API Gemini và Ollama để xử lý hội thoại | 30/06/2026   | 30/06/2026      ||
+| Wed | - Xây dựng giao diện hiển thị lộ trình PlanTab cho phép quản lý tiến độ học tập <br> - Phát triển module đọc tài liệu học tập (PDF, DOCX, TXT) hỗ trợ nạp ngữ cảnh vào bài học      | 01/07/2026   | 01/07/2026     |
+| Thu | - Phát triển tính năng tự động tạo câu hỏi ôn tập ôn tập QuizTab.jsx tính điểm thưởng Knowledge Points (KP) <br> - Tái cấu trúc và gộp chung toàn bộ cài đặt AI vào một mục quản trị duy nhất | 02/07/2026   | 02/07/2026      |        |
+| Fri | - Tối ưu hóa giao diện SCSS toàn bộ tính năng Study Planner <br> - Kiểm thử liên thông các luồng: Nhận tư vấn -> Tạo lộ trình -> Tải tài liệu -> Làm Quiz kiểm tra -> Tùy chỉnh cấu hình AI | 03/07/2026   | 03/07/2026      ||
 
 
 ### Kết quả đạt được tuần 9:

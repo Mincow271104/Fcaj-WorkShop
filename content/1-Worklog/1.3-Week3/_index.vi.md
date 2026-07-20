@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 3"
 date: 2024-01-01
 weight: 1
@@ -17,9 +17,9 @@ pre: " <b> 1.3. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2,3,4   | - Làm quen trực tiếp với các thành viên trong nhóm <br>- Thảo luận và xác định đề tài, phân chia công việc                                                                                    | 18/05/2026  | 20/05/2026      |
-| 5   | - Lên văn phòng Check-in, làm quen với môi trường trong công việc| 21/05/2026   | 21/05/2026      |  |
-| 7   | - Tham dự Event, nghe các anh chị trong Fcaj thuyết trình | 23/05/2026  | 23/05/2026      | |
+| Mon,Tue,Wed | - Làm quen trực tiếp với các thành viên trong nhóm <br>- Thảo luận và xác định đề tài, phân chia công việc                                                                                    | 18/05/2026  | 20/05/2026      |
+| Thu | - Lên văn phòng Check-in, làm quen với môi trường trong công việc| 21/05/2026   | 21/05/2026      |  |
+| Sat | - Tham dự Event, nghe các anh chị trong Fcaj thuyết trình | 23/05/2026  | 23/05/2026      | |
 
 
 

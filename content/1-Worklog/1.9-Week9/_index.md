@@ -1,13 +1,11 @@
----
+﻿---
 title: "Week 9 Worklog"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 9 Objectives:
@@ -18,11 +16,11 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Analyze requirements and design the overall architecture for the AI Study Planner (including Chat, Plan, Quiz, and Settings tabs) <br> - Design the database structure to store study plans          | 06/29/2026 | 06/29/2026      ||
-| 3   | - Develop the study consultation interface ChatTab supporting interactive conversation <br> - Write the Backend service aiStudyService.js connecting Gemini and Ollama APIs for chat      | 06/30/2026 | 06/30/2026      ||
-| 4   | - Build the roadmap visualization interface PlanTab to manage learning progress <br> - Develop the document attachment module (PDF, DOCX, TXT) to import study context                        | 07/01/2026 | 07/01/2026      ||
-| 5   | - Develop the automated quiz generator QuizTabintegrating Knowledge Points (KP) rewards <br> - Refactor and consolidate all scattered AI configurations into a single setting section       | 07/02/2026 | 07/02/2026      ||
-| 6   | - Optimize the SCSS layout of the entire Study Planner feature <br> - Perform end-to-end integration tests: Consult -> Generate Plan -> Load Documents -> Solve Quiz -> Configure AI settings         | 07/03/2026 | 07/03/2026      ||
+| Mon | - Analyze requirements and design the overall architecture for the AI Study Planner (including Chat, Plan, Quiz, and Settings tabs) <br> - Design the database structure to store study plans          | 06/29/2026 | 06/29/2026      ||
+| Tue | - Develop the study consultation interface ChatTab supporting interactive conversation <br> - Write the Backend service aiStudyService.js connecting Gemini and Ollama APIs for chat      | 06/30/2026 | 06/30/2026      ||
+| Wed | - Build the roadmap visualization interface PlanTab to manage learning progress <br> - Develop the document attachment module (PDF, DOCX, TXT) to import study context                        | 07/01/2026 | 07/01/2026      ||
+| Thu | - Develop the automated quiz generator QuizTabintegrating Knowledge Points (KP) rewards <br> - Refactor and consolidate all scattered AI configurations into a single setting section       | 07/02/2026 | 07/02/2026      ||
+| Fri | - Optimize the SCSS layout of the entire Study Planner feature <br> - Perform end-to-end integration tests: Consult -> Generate Plan -> Load Documents -> Solve Quiz -> Configure AI settings         | 07/03/2026 | 07/03/2026      ||
 
 
 ### Week 9 Achievements:

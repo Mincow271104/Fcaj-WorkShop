@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 2"
 date: 2024-01-01
 weight: 1
@@ -17,9 +17,9 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2,3,4   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 11/05/2026   | 13/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 14/05/2026   | 14/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6,7   |- Tham gia vào nhóm, thảo luận, tìm kiếm đề tài             | 15/08/2026   | 16/08/2026      |  |
+| Mon,Tue,Wed | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 11/05/2026   | 13/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Thu | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 14/05/2026   | 14/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| Fri,Sat |- Tham gia vào nhóm, thảo luận, tìm kiếm đề tài             | 15/08/2026   | 16/08/2026      |  |
 
 ### Kết quả đạt được tuần 2:
 

@@ -15,11 +15,12 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Cấu hình IAM Role và Policy trên 2 tài khoản AWS để thiết lập quyền Cross-Account truy cập Amazon Bedrock <br> - Tích hợp hệ thống Amazon Bedrock AI với các mô hình Nova Micro và Nova Lite | 06/07/2026   | 06/07/2026      | |
-| 3   | - Xây dựng cơ chế tự động Retry thông minh để xử lý lỗi quá tải API (429, 503) đảm bảo tính ổn định | 07/07/2026   | 07/07/2026      | |
-| 4   | - Cải thiện giao diện Focus Mode, phân chia rõ ràng chế độ Casual và Rank, đồng thời bổ sung tính năng giới hạn thời gian Custom | 08/07/2026   | 08/07/2026      | |
-| 5   | - Phát triển tính năng hiển thị chi tiết và minh bạch trạng thái của Browser Extension và model AI đang sử dụng | 09/07/2026   | 09/07/2026      | |
-| 6   | - Dọn dẹp Settings UI, loại bỏ các thành phần cấu hình không cần thiết (như FaceTracking) và kiểm thử toàn bộ hệ thống | 10/07/2026   | 10/07/2026      | |
+| Mon | - Cấu hình IAM Role và Policy trên 2 tài khoản AWS để thiết lập quyền Cross-Account truy cập Amazon Bedrock <br> - Tích hợp hệ thống Amazon Bedrock AI với các mô hình Nova Micro và Nova Lite | 06/07/2026   | 06/07/2026      | |
+| Tue | - Xây dựng cơ chế tự động Retry thông minh để xử lý lỗi quá tải API (429, 503) đảm bảo tính ổn định | 07/07/2026   | 07/07/2026      | |
+| Wed | - Cải thiện giao diện Focus Mode, phân chia rõ ràng chế độ Casual và Rank, đồng thời bổ sung tính năng giới hạn thời gian Custom | 08/07/2026   | 08/07/2026      | |
+| Thu | - Phát triển tính năng hiển thị chi tiết và minh bạch trạng thái của Browser Extension và model AI đang sử dụng | 09/07/2026   | 09/07/2026      | |
+| Fri | - Dọn dẹp Settings UI, loại bỏ các thành phần cấu hình không cần thiết (như FaceTracking) | 10/07/2026   | 10/07/2026      | |
+| Sat | - Kiểm thử liên thông toàn bộ hệ thống, tối ưu hóa hiệu năng và vá các lỗi phát sinh | 11/07/2026 | 11/07/2026 | |
 
 ### Kết quả đạt được tuần 10:
 

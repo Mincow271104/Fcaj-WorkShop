@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 1"
 date: 2024-01-01
 weight: 1
@@ -16,9 +16,9 @@ pre: " <b> 1.1. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 3,4,5   | - Đọc nội quy, tìm hiểu cơ bản về AWS| 05/05/2026 | 07/05/2026 | |
-| 6   | - Tham gia vào kênh chat và trò chuyện với các anh chị trong fcaj <br> - Tìm kiếm đồng đội | 08/05/2026 | 08/05/2026 | |
-| 7   | - Tham dự Event, làm quen trực tiếp với các thành viên FCAJ và Thực tập sinh <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập | 09/05/2026 | 09/05/2026 |
+| Tue,Wed,Thu | - Đọc nội quy, tìm hiểu cơ bản về AWS| 05/05/2026 | 07/05/2026 | |
+| Fri | - Tham gia vào kênh chat và trò chuyện với các anh chị trong fcaj <br> - Tìm kiếm đồng đội | 08/05/2026 | 08/05/2026 | |
+| Sat | - Tham dự Event, làm quen trực tiếp với các thành viên FCAJ và Thực tập sinh <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập | 09/05/2026 | 09/05/2026 |
 
 ### Kết quả đạt được tuần 1:
 

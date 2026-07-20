@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 7"
 date: 2024-01-01
 weight: 1
@@ -18,8 +18,8 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2,3   | - Tái cấu trúc dữ liệu đầu vào (Input) và đầu ra (Output) phía Client để tương thích hoàn toàn với cấu trúc schema mới của cơ sở dữ liệu Amazon DynamoDB. <br>- Kiểm thử tính đúng đắn của dữ liệu khi đồng bộ thông qua API Gateway. | 15/06/2026   | 16/06/2026      | |
-| 4,5,6,7   | - Tối ưu hóa hiệu suất gọi mô hình AI phân loại, xây dựng cơ chế cache kết quả để giảm thiểu số lượng request lên Cloud API (Groq) và Local AI (Ollama). <br>- Nghiên cứu và tích hợp thêm tính năng lọc thông minh sử dụng AI để tự động phân tích và chặn các đường dẫn (Web URLs) không xác định nằm ngoài danh sách tĩnh. | 17/06/2026   | 20/06/2026      | |
+| Mon,Tue | - Tái cấu trúc dữ liệu đầu vào (Input) và đầu ra (Output) phía Client để tương thích hoàn toàn với cấu trúc schema mới của cơ sở dữ liệu Amazon DynamoDB. <br>- Kiểm thử tính đúng đắn của dữ liệu khi đồng bộ thông qua API Gateway. | 15/06/2026   | 16/06/2026      | |
+| Wed,Thu,Fri,Sat | - Tối ưu hóa hiệu suất gọi mô hình AI phân loại, xây dựng cơ chế cache kết quả để giảm thiểu số lượng request lên Cloud API (Groq) và Local AI (Ollama). <br>- Nghiên cứu và tích hợp thêm tính năng lọc thông minh sử dụng AI để tự động phân tích và chặn các đường dẫn (Web URLs) không xác định nằm ngoài danh sách tĩnh. | 17/06/2026   | 20/06/2026      | |
  
  
  

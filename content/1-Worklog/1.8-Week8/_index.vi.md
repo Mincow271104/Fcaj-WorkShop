@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 8"
 date: 2024-01-01
 weight: 1
@@ -16,8 +16,8 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2,3,4,5 | **Thêm chức năng Nhiệm vụ ngày (Daily Quests) cho dự án:** <br>- Thiết kế & Xây dựng UI/UX: Giao diện QuestPanel (danh sách nhiệm vụ, thanh tiến trình, hiệu ứng claim reward). <br>- Quản lý Trạng thái: Tích hợp Redux cho danh sách quest, tiến độ và trạng thái phần thưởng. <br>- Thiết lập Logic: Thuật toán tự động cập nhật tiến độ (Progress Tracker) từ sự kiện Focus, Login. <br>- Cơ chế Reset: Logic tự động làm mới nhiệm vụ sau 24h và đồng hồ đếm ngược. <br>- Lưu trữ & Đồng bộ: Giao tiếp IPC Electron để lưu trữ cục bộ và đồng bộ hóa đám mây. | 22/06/2026 | 25/06/2026 | |
-| 6,7 | **Lên kế hoạch phát triển chức năng AI Study Planner:** <br>- Phân tích yêu cầu: Xác định luồng Chat tư vấn, Tạo lộ trình (Generate Plan) và Tạo trắc nghiệm (Generate Quiz). <br>- Đánh giá Công nghệ: Khảo sát mô hình LLM (Groq/OpenAI), chuẩn bị Prompt Engineering mẫu. <br>- Thiết kế Kiến trúc: Sơ đồ lưu trữ lịch sử chat, cấu trúc JSON Study Plan và Quiz DB. <br>- Phác thảo Module: Định nghĩa các component cần viết (Chat UI, Plan Viewer, Quiz Modal) và thiết kế IPC Main/Renderer. <br>- Lập kế hoạch: Chia nhỏ các task cụ thể, ước lượng thời gian và lập cột mốc phát triển. | 26/06/2026 | 27/06/2026 | |
+| Mon,Tue,Wed,Thu | **Thêm chức năng Nhiệm vụ ngày (Daily Quests) cho dự án:** <br>- Thiết kế & Xây dựng UI/UX: Giao diện QuestPanel (danh sách nhiệm vụ, thanh tiến trình, hiệu ứng claim reward). <br>- Quản lý Trạng thái: Tích hợp Redux cho danh sách quest, tiến độ và trạng thái phần thưởng. <br>- Thiết lập Logic: Thuật toán tự động cập nhật tiến độ (Progress Tracker) từ sự kiện Focus, Login. <br>- Cơ chế Reset: Logic tự động làm mới nhiệm vụ sau 24h và đồng hồ đếm ngược. <br>- Lưu trữ & Đồng bộ: Giao tiếp IPC Electron để lưu trữ cục bộ và đồng bộ hóa đám mây. | 22/06/2026 | 25/06/2026 | |
+| Fri,Sat | **Lên kế hoạch phát triển chức năng AI Study Planner:** <br>- Phân tích yêu cầu: Xác định luồng Chat tư vấn, Tạo lộ trình (Generate Plan) và Tạo trắc nghiệm (Generate Quiz). <br>- Đánh giá Công nghệ: Khảo sát mô hình LLM (Groq/OpenAI), chuẩn bị Prompt Engineering mẫu. <br>- Thiết kế Kiến trúc: Sơ đồ lưu trữ lịch sử chat, cấu trúc JSON Study Plan và Quiz DB. <br>- Phác thảo Module: Định nghĩa các component cần viết (Chat UI, Plan Viewer, Quiz Modal) và thiết kế IPC Main/Renderer. <br>- Lập kế hoạch: Chia nhỏ các task cụ thể, ước lượng thời gian và lập cột mốc phát triển. | 26/06/2026 | 27/06/2026 | |
 
 ### Kết quả đạt được tuần 8:
 

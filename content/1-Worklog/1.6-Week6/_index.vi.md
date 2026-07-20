@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 6"
 date: 2024-01-01
 weight: 1
@@ -15,7 +15,7 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2,3,4,5,6,7   | - Chuyển đổi Backend sang dịch vụ AWS: <br>&emsp; + Amazon API Gateway: Cổng tiếp nhận và điều hướng (routing) các API requests từ Client. <br>&emsp; + AWS Lambda: Đảm nhận chạy logic nghiệp vụ (Serverless Backend) như đồng bộ dữ liệu (sync), quản lý nhiệm vụ (quest), và quản lý phiên học (session). <br>&emsp; + Amazon DynamoDB: Cơ sở dữ liệu NoSQL lưu trữ thông tin Profile (user, streak), Nhiệm vụ (Quest), và Lịch sử học tập (Study Sessions). <br>&emsp; + Amazon Cognito: Quản lý tài khoản, xác thực người dùng và bảo mật API bằng JWT Token. <br> Lên văn phòng, trao đổi với các thành viên và lên kế hoạch cho chức năng mới và nâng cấp chức năng cũ                                                                                              | 08/06/2026  | 14/06/2026      |
+| Mon,Tue,Wed,Thu,Fri,Sat | - Chuyển đổi Backend sang dịch vụ AWS: <br>&emsp; + Amazon API Gateway: Cổng tiếp nhận và điều hướng (routing) các API requests từ Client. <br>&emsp; + AWS Lambda: Đảm nhận chạy logic nghiệp vụ (Serverless Backend) như đồng bộ dữ liệu (sync), quản lý nhiệm vụ (quest), và quản lý phiên học (session). <br>&emsp; + Amazon DynamoDB: Cơ sở dữ liệu NoSQL lưu trữ thông tin Profile (user, streak), Nhiệm vụ (Quest), và Lịch sử học tập (Study Sessions). <br>&emsp; + Amazon Cognito: Quản lý tài khoản, xác thực người dùng và bảo mật API bằng JWT Token. <br> Lên văn phòng, trao đổi với các thành viên và lên kế hoạch cho chức năng mới và nâng cấp chức năng cũ                                                                                              | 08/06/2026  | 14/06/2026      |
  
 
 
