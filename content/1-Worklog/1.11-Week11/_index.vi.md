@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 11"
-date: 2024-01-01
-weight: 2
+date: 2026-07-13
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thêm chức năng pet (thú cưng ảo) cho ứng dụng.
+* Thêm animation sinh động cho 2 loại pet khác nhau.
+* Đem tài nguyên của pet lên lưu trữ tại hệ thống AWS S3.
+* Lên kế hoạch và thiết kế cho tính năng Block App.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Lên kế hoạch chi tiết, phân tích yêu cầu và phác thảo giải pháp kỹ thuật cho chức năng Block App | 13/07/2026   | 13/07/2026      | |
+| 3   | - Thiết kế UI/UX và lập trình tích hợp chức năng hiển thị pet (thú cưng ảo) trên giao diện chính | 14/07/2026   | 14/07/2026      | |
+| 4   | - Bổ sung và tinh chỉnh animation mượt mà cho 2 nhân vật pet khác nhau để tăng tính tương tác | 15/07/2026   | 15/07/2026      | |
+| 5   | - Cấu hình bucket AWS S3 và triển khai upload toàn bộ tài nguyên hình ảnh, dữ liệu của pet lên Cloud | 16/07/2026   | 16/07/2026      | |
+| 6   | - Tối ưu hóa quá trình tải dữ liệu từ S3, fix bugs và kiểm thử trải nghiệm người dùng toàn bộ hệ thống | 17/07/2026   | 17/07/2026      | |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Đã hoàn thành bộ tài liệu và kế hoạch chi tiết cho chức năng Block App, sẵn sàng triển khai mã nguồn.
+* Tích hợp thành công hệ thống thú cưng ảo (pet) vào ứng dụng, giúp nâng cao hứng thú học tập của người dùng.
+* Hoàn thiện hai bộ animation sống động cho 2 loại pet, tăng tính thẩm mỹ và độ mượt mà của ứng dụng.
+* Toàn bộ tài nguyên đồ họa của pet đã được đưa lên AWS S3 thành công, tối ưu hóa kích thước cài đặt ban đầu của ứng dụng và cho phép cập nhật nội dung linh hoạt qua mạng.
