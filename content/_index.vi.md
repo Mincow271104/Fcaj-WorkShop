@@ -26,7 +26,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ 05/05/2026 đến 30/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+![Ảnh đại diện của bạn](https://res.cloudinary.com/nbwjjr1y/image/upload/v1784650189/b3c58944eec36f9d36d2_kpn8c2.jpg)
 
 ### Nội dung báo cáo
 
