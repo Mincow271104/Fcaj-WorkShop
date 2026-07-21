@@ -8,7 +8,7 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Phương Khang Minh
+&emsp; **Full Name:** Phuong Khang Minh
 
 &emsp; **Phone Number:** 0901018771 
 

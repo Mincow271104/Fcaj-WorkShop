@@ -16,11 +16,11 @@ This phenomenon is partly related to the brain's reward-based learning system. D
 
 > **Action → Feedback → Reward → Motivation to repeat**
 
-Uchimi StudyGamification applies this principle through focus sessions, daily tasks, progress indicators, achievements, rewards, minigames, and social interaction. These elements are not meant to replace the value of knowledge or turn learning into a reward-collecting activity. Instead, they help reduce the psychological barrier to getting started, make progress clear, and support users in gradually shifting from external motivation to internal motivation and a sustainable study habit.
+The project applies this principle through focus sessions, daily tasks, progress indicators, achievements, rewards, minigames, and social interaction. These elements are not meant to replace the value of knowledge or turn learning into a reward-collecting activity. Instead, they help reduce the psychological barrier to getting started, make progress clear, and support users in gradually shifting from external motivation to internal motivation and a sustainable study habit.
 
 ## Problem Statement and Project Goals
 
-Traditional learning tools often focus on providing content and managing tasks but do not fully support maintaining long-term motivation. In contrast, a purely entertainment-based reward system might attract users but does not create real learning outcomes. Therefore, Uchimi needs to make learning engaging enough for users to join voluntarily, while ensuring the cloud-based gamification system is always fair, consistent, responsive, secure, scalable, and cost-optimized.
+Traditional learning tools often focus on providing content and managing tasks but do not fully support maintaining long-term motivation. In contrast, a purely entertainment-based reward system might attract users but does not create real learning outcomes. Therefore, the project needs to make learning engaging enough for users to join voluntarily, while ensuring the cloud-based gamification system is always fair, consistent, responsive, secure, scalable, and cost-optimized.
 
 The project builds a desktop learning app, combining **ReactJS and Electron on the client side** with **AWS Serverless architecture on the backend**. The core goal is to make learning a voluntary, easily repeatable activity by giving each study session a clear goal, timely feedback, and a sense of achievement. Specific goals include:
 
@@ -37,15 +37,15 @@ The project does not aim to force users to study more. The system aims to create
 
 ### Students
 
-High school and college students often have to absorb a large amount of knowledge, complete assignments on time, and prepare for exams. Common struggles include loss of focus, procrastination, stress, and difficulty measuring daily progress. Uchimi helps turn general goals into focus sessions and daily tasks, supports reviewing with quizzes, and provides feedback right after each activity. Ranked study modes and progress statistics also create a clearer structure for users who need more discipline.
+High school and college students often have to absorb a large amount of knowledge, complete assignments on time, and prepare for exams. Common struggles include loss of focus, procrastination, stress, and difficulty measuring daily progress. The platform helps turn general goals into focus sessions and daily tasks, supports reviewing with quizzes, and provides feedback right after each activity. Ranked study modes and progress statistics also create a clearer structure for users who need more discipline.
 
 ### Working Professionals
 
-Working professionals often study to improve professional skills, learn foreign languages, prepare for certificates, or pursue personal hobbies. The main limitation for this group is having little and fragmented time, instead of a fixed schedule. Uchimi supports them with flexible planning, short study sessions, progress syncing, and AI-assisted learning features, thereby helping them maintain their studies without creating an extra burden after work.
+Working professionals often study to improve professional skills, learn foreign languages, prepare for certificates, or pursue personal hobbies. The main limitation for this group is having little and fragmented time, instead of a fixed schedule. The system supports them with flexible planning, short study sessions, progress syncing, and AI-assisted learning features, thereby helping them maintain their studies without creating an extra burden after work.
 
 ### Shared Values for Both Groups
 
-Despite having different schedules and goals, both groups need support to get started, stay consistent, and recognize their progress. Uchimi turns long-term goals into manageable activities, acknowledges effort over time, and connects learning with feedback as well as appropriate entertainment. Users are still in control of their goals and can choose a pace that fits their personal situation. A voluntary, user-centric approach is key to forming a lasting habit rather than just creating short-term interest.
+Despite having different schedules and goals, both groups need support to get started, stay consistent, and recognize their progress. The project turns long-term goals into manageable activities, acknowledges effort over time, and connects learning with feedback as well as appropriate entertainment. Users are still in control of their goals and can choose a pace that fits their personal situation. A voluntary, user-centric approach is key to forming a lasting habit rather than just creating short-term interest.
 
 ## Core Technical Problems
 
@@ -63,7 +63,7 @@ Learning progress, Knowledge Points, in-system currency, item inventory, rewards
 
 ### 4. Efficient Synchronization Between Client and Server
 
-The desktop app needs to display useful information right at startup, even if the network is slow or temporarily disconnected. However, having the client constantly call every API to check for new data will increase latency, network traffic, Lambda executions, and database reads. Uchimi needs an offline-friendly strategy, combining local caching, version or timestamp-based change detection, aggregated sync endpoints, incremental updates, and expiration policies for data that can tolerate delays. Event-driven processing in the backend helps automatically spread internal changes. The conflict resolution mechanism must distinguish between data that can be merged on the client and decisive data like balances, rewards, and ranking results—which must always rely on the server as the final source of truth.
+The desktop app needs to display information and UI resources quickly right at startup. However, having the client constantly call every API to check for new data will increase latency, network traffic, Lambda executions, and database reads. The system applies a strategy optimizing UX and responsiveness through preloading and local resource caching, version or timestamp-based change detection, aggregated sync endpoints, incremental updates, and expiration policies for data that can tolerate delays. Event-driven processing in the backend helps automatically spread internal changes. The conflict resolution mechanism must distinguish between data that can be merged on the client and decisive data like balances, rewards, and ranking results—which must always rely on the server as the final source of truth.
 
 ### 5. Optimizing Cloud Server Operational Costs
 
@@ -78,4 +78,4 @@ User activity levels change over time, so permanently allocated infrastructure c
 
 ## Expected Project Value
 
-Uchimi illustrates the ability to combine behavioral design, AI-assisted learning, desktop app technology, and cloud-native architecture in a practical educational system. For users, the platform supports a voluntary mindset, visualizes progress, and builds long-term habits. Technically, the project is a case study on a gamification platform on AWS with the server as the reliable data source, ensuring consistency, offline-friendliness, and controlled operational costs.
+The project illustrates the ability to combine behavioral design, AI-assisted learning, desktop app technology, and cloud-native architecture in a practical educational system. For users, the platform supports a voluntary mindset, visualizes progress, and builds long-term habits. Technically, the project is a case study on a gamification platform on AWS with the server as the reliable data source, ensuring consistency, high responsiveness through local caching, and controlled operational costs.

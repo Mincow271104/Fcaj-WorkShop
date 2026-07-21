@@ -11,13 +11,19 @@ pre: " <b> 5. </b> "
 
 Chào mừng anh/ chị đã đến với tài liệu kỹ thuật của dự án **Uchimi StudyGamification**. Dự án được xây dựng với kiến trúc **ReactJS + Electron** ở phía Client và nền tảng **AWS Serverless** ở phía Server, hướng đến mục tiêu tối ưu hóa chi phí vận hành nhưng vẫn mang lại trải nghiệm học tập tuyệt vời, giúp quá trình tự học không còn gò bó hay mang tính ép buộc.
 
+* **Video Demo dự án:** [Xem Video Demo](https://youtu.be/8Bw4-nwUaTc)
+* **Sơ đồ kiến trúc dự án:** ![Sơ đồ kiến trúc AWS](https://res.cloudinary.com/dqblg6ont/image/upload/v1784555384/Uchimi_StudyGamification-Uchimi_Architecture.drawio_nn9xhr.png)
+* **Mã nguồn Frontend:** [GitHub Repository - AWSStudy-Play](https://github.com/KhangChinh/AWSStudy-Play)
+* **Mã nguồn Backend:** [GitHub Repository - AWSServerless](https://github.com/KhangChinh/AWSServerless)
+* **Tải ứng dụng Desktop (.exe):** [Tải bản Setup (.exe)](https://drive.google.com/file/d/1Qkdv_nLrQWICSZFCWqytDioq4r35Vyz4/view?usp=sharing)
+
 ## Tổng quan
 
 Trong thời đại công nghệ số phát triển mạnh mẽ, thách thức lớn nhất của quá trình tự học không còn nằm ở việc khó tiếp cận kiến thức. Khó khăn thực sự nằm ở **khả năng duy trì sự tập trung lâu dài và tính kỷ luật** để việc học không bị gián đoạn. Người học rất dễ bị xao nhãng bởi vô vàn cám dỗ khi sử dụng máy tính, khiến việc hình thành một thói quen học tập bền vững trở nên vô cùng khó khăn.
 
-**Uchimi StudyGamification** được ra đời nhằm giải quyết triệt để bài toán này. Mục tiêu cốt lõi của dự án là biến hành động "mở máy tính lên học mỗi ngày" thành một thói quen tự nhiên, bền vững và đầy hứng thú. 
+**Dự án Uchimi StudyGamification** ra đời nhằm giải quyết bài toán này. Mục tiêu cốt lõi của dự án là biến hành động "mở máy tính lên học mỗi ngày" thành một thói quen tự nhiên, bền vững và đầy hứng thú. 
 
-Hệ thống mang đến một giải pháp toàn diện, là sự giao thoa hoàn hảo giữa **kỷ luật thép** và **giải trí lành mạnh**:
+Hệ thống mang đến một giải pháp kết hợp hiệu quả giữa **kỷ luật học tập** và **giải trí lành mạnh**:
 *   **Học tập kỷ luật cùng AI:** Áp dụng công nghệ AI Scan để theo dõi (track) và ngăn chặn ngay lập tức các hành vi xao nhãng khi người dùng thao tác trên máy tính, giúp duy trì sự tập trung cao độ.
 *   **Hệ sinh thái giải trí (Minigame):** Sau những giờ học tập căng thẳng, người dùng sẽ được bước vào không gian thư giãn với các minigame thú vị. Sự kết hợp này biến những áp lực học hành thành phần thưởng xứng đáng, giúp tái tạo năng lượng hiệu quả.
 

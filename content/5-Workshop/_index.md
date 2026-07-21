@@ -10,11 +10,16 @@ pre: " <b> 5. </b> "
 
 Welcome to the technical documentation for the **Uchimi StudyGamification** project. The project is built with a **ReactJS + Electron** architecture on the Client side and an **AWS Serverless** platform on the Server side, aiming to optimize operational costs while delivering an excellent learning experience, making self-study no longer feel restrictive or forced.
 
+* **Project Demo Video:** [Watch Demo Video](https://youtu.be/8Bw4-nwUaTc)
+* **Frontend Source Code:** [GitHub Repository - AWSStudy-Play](https://github.com/KhangChinh/AWSStudy-Play)
+* **Backend Source Code:** [GitHub Repository - AWSServerless](https://github.com/KhangChinh/AWSServerless)
+* **Download Desktop App (.exe):** [Download Setup (.exe)](https://drive.google.com/file/d/1Qkdv_nLrQWICSZFCWqytDioq4r35Vyz4/view?usp=sharing)
+
 ## Overview
 
 In an era of rapid digital development, the biggest challenge of self-study is no longer the difficulty of accessing knowledge. The real difficulty lies in the **ability to maintain long-term focus and discipline** so that learning is not interrupted. Learners are easily distracted by countless temptations when using computers, making it extremely difficult to build a sustainable study habit.
 
-**Uchimi StudyGamification** was created to completely solve this problem. The core goal of the project is to turn the act of "turning on the computer to study every day" into a natural, sustainable, and exciting habit.
+**The Uchimi StudyGamification project** was created to address this problem. The core goal of the project is to turn the act of "turning on the computer to study every day" into a natural, sustainable, and exciting habit.
 
 The system provides a comprehensive solution, representing the perfect intersection between **iron discipline** and **healthy entertainment**:
 *   **Disciplined AI Learning:** Applies AI Scan technology to track and instantly block distracting behaviors when users operate on their computers, helping to maintain deep focus.
