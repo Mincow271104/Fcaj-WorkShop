@@ -1,55 +1,26 @@
-﻿---
+---
 title: "Week 12 Worklog"
-date: 2024-01-01
+date: 2026-07-21
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-
-
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Add the App Blocker feature to monitor and block applications on Windows.
+* Add 5 animations and configure action files for the 5 pets.
+* Fix bugs and issues arising after system deployment.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| Mon | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| Tue | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| Wed | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| Thu | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| Fri | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon - Tue | - Develop the AI-powered App Blocker to monitor Windows applications during focus hours <br> - Write scripts to scan processes and display warning overlays for entertainment apps | 07/20/2026 | 07/21/2026 |
+| Wed - Thu | - Graphics processing: add 5 animations (idle, walk, jump...) for the 5 pets <br> - Configure action files so pets can interact naturally on the Dashboard | 07/22/2026 | 07/23/2026 |
+| Fri - Sat | - Comprehensively test the system after server deployment <br> - Fix UI bugs related to pets, resolve API errors, and optimize code <br> - Finalize project documentation | 07/24/2026 | 07/25/2026 |
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully completed the App Blocker feature: The system can now automatically identify and block entertainment applications on Windows, enforcing study discipline.
+* The 5 pets are now displayed and running smoothly with all 5 animations, making the Gamification experience much more engaging and vivid.
+* Completely resolved all lingering bugs after deploying the project to production. The application is running stably and is ready for the final report.
