@@ -47,7 +47,7 @@ Bài viết minh họa bằng traffic generator mô phỏng tải thật trên c
 | **Production event** | 10 phút, 30 RPS, error rate 25% trên java-otel | Phát hiện lệch baseline, pinpoint service bị ảnh hưởng, phân tích lỗi, đề xuất remediation |
 
 Trong kịch bản sự cố, Agent có thể:
-- Xác định đúng ứng dụng bị ảnh hưởng (**java-otel-app**).
+- Xác định đúng ứng dụng bị ảnh hưởng (`java-otel-app`).
 - Phân tích pattern lỗi (HTTP 500, timeout, connection refused…).
 - Liên hệ spike CPU/memory với suy giảm hiệu năng.
 - Dựng timeline sự kiện và đánh giá blast radius xuyên service.

@@ -10,7 +10,7 @@ pre : " <b> 5.2. </b> "
 
 After defining the product problem in section 5.1, the architecture design phase focuses on one question: *how can a Desktop app deliver a smooth experience while still ensuring data integrity and anti-cheat controls on the Server?* The project follows a **distributed Client–Server** model: the Frontend runs locally on the user’s machine (ReactJS + Electron), and the Backend runs fully on **AWS Serverless** in region **ap-southeast-1**.
 
-#### Choosing Client–Server: ReactJS/Electron and AWS Serverless
+#### 5.2.1. Choosing Client–Server: ReactJS/Electron and AWS Serverless
 
 **Client side (ReactJS + Electron):** Instead of a pure web app, the project packages the React UI as a real Desktop application with Electron — fitting the “study OS” concept (floating windows, taskbar, Focus widgets). On the diagram, the CLIENT block includes the **Electron App** and **Focus Guard** (Chrome Extension); the two components sync focus state over an internal **WebSocket (WS)** channel. Amplify Auth integrates directly with Amazon Cognito so the Client receives a JWT and attaches it to every API request without custom auth logic. More importantly, the **Local Caching** mechanism (Redux + Electron-store) lets users open the app and see UI assets and data immediately from the cache, optimizing response speed before the system quietly syncs latest data with the Cloud via **POST /sync-all**.
 
@@ -21,27 +21,27 @@ After defining the product problem in section 5.1, the architecture design phase
 * **Infrastructure as Code:** The full stack is declared in **serverless.yml**; one **serverless deploy** lets CloudFormation provision Lambda, API, IAM, and Logs together.
 * **Built-in integrations:** Cognito, DynamoDB, S3, EventBridge, and Streams reduce platform setup time compared with self-managed servers.
 
-#### Architecture limitations and trade-offs
+#### 5.2.2. Architecture limitations and trade-offs
 
 Alongside the benefits, this model introduces technical challenges that must be handled deliberately:
 
 * **Lambda cold start:** The first request after idle time can be slower while the runtime initializes. The project mitigates this by keeping memory at 512 MB (a practical balance of speed and cost).
-* **Distributed debugging:** Logic is spread across the Lambda functions shown on the diagram as **36 fn**, plus async triggers (Streams, S3, Cron) — end-to-end tracing depends on correctly configured CloudWatch Logs.
+* **Distributed debugging:** Logic is spread across the Lambda functions shown on the diagram as **43 fn**, plus async triggers (Streams, S3, Cron) — end-to-end tracing depends on correctly configured CloudWatch Logs.
 * **DynamoDB design upfront:** NoSQL does not support JOINs or complex full-text search. Every query must be designed around PK/SK and GSIs from the start; username search relies on an external service (Algolia).
 * **Cache Synchronization and race conditions:** Local Client caches can conflict during rapid operations. The Backend must use **TransactWriteItems** for currency/inventory transactions and apply Server Authority — never trust Client-reported balances.
 * **Vendor lock-in:** The architecture is tightly coupled to AWS (DynamoDB Streams, Cognito JWT Authorizer, IAM Roles). Moving to another cloud would require significant refactoring.
 * **Electron resource cost:** The Desktop app uses more RAM than a pure web app; distribution and version updates are more complex than a web deploy.
 
-#### Overall architecture diagram
+#### 5.2.3. Overall architecture diagram
 
 The diagram below shows the main communication paths among the Client, AWS services, and third-party systems. Inside **AWS Cloud — ap-southeast-1** there are four groups: AUTH & SECURITY, API & COMPUTE, DATA, and ASYNC; **CloudFront** serves images from S3. Outside the main account box are **ACCOUNT B — BEDROCK** (cross-account via STS) and the **EXTERNAL** block (Algolia, Gemini).
 
-![AWS architecture diagram](https://res.cloudinary.com/dqblg6ont/image/upload/v1784555384/Uchimi_StudyGamification-Uchimi_Architecture.drawio_nn9xhr.png)
+![AWS architecture diagram](https://res.cloudinary.com/dakqspssm/image/upload/v1784649976/Uchimi_StudyGamification-Uchimi_Architecture.drawio_wdyyor.png)
 
 Main flows on the diagram (numbered 1–10):
 1. **Login:** The Electron App signs in through **Cognito User + IdP** and receives a JWT.
 2. **API (JWT):** The Client calls **HTTP API + JWT**; API Gateway verifies the token before requests reach the Backend.
-3. **Invoke:** The HTTP API invokes **Lambda (36 fn)** to run business logic.
+3. **Invoke:** The HTTP API invokes **Lambda (43 fn)** to run business logic.
 4. **R/W:** Lambda reads/writes **DynamoDB + Streams**.
 5. **Assets:** Lambda reads/writes **S3 Assets** (uploads, avatars, public assets, etc.).
 6. **Index:** DynamoDB changes (via Streams) are pushed to **Algolia** to keep the search index in sync (implemented through the **streamIndexer** Lambda).
@@ -54,13 +54,13 @@ Main flows on the diagram (numbered 1–10):
 
 Original Draw.io file: **docs/Uchimi StudyGamification.drawio** (tab *Uchimi Current Architecture*)
 
-#### Core AWS services
+#### 5.2.4. Core AWS services
 
-The project uses Serverless Framework (Node.js 20.x) to provision infrastructure automatically. Per the architecture diagram, the compute layer is **Lambda (36 fn)**, together with **25 HTTP routes**, **2 EventBridge schedules** (cron ×2), **3 S3 triggers**, **1 DynamoDB Stream trigger**, and **1 Cognito PostConfirmation trigger**.
+The project uses Serverless Framework (Node.js 20.x) to provision infrastructure automatically. Per the architecture diagram, the compute layer is **Lambda (43 fn)**, together with **25 HTTP routes**, **2 EventBridge schedules** (cron ×2), **3 S3 triggers**, **1 DynamoDB Stream trigger**, and **1 Cognito PostConfirmation trigger**.
 
 | Service | Purpose | Configuration details |
 | :--- | :--- | :--- |
-| **AWS Lambda** | Runs all business logic | API & COMPUTE group on the diagram: **36 fn**, organized into 10 modules (User, Session, Gacha, Minigame, Quest, Shop, Social, Upload, Currency, Sync). |
+| **AWS Lambda** | Runs all business logic | API & COMPUTE group on the diagram: **43 fn**, organized into 10 modules (User, Session, Gacha, Minigame, Quest, Shop, Social, Upload, Currency, Sync). |
 | **API Gateway** | HTTP API + JWT entry point for the Client | 25 routes (GET/POST/PUT), Cognito JWT Authorizer, throttling at 50 req/s and 20 concurrent. |
 | **Amazon Cognito** | Authentication and identity (AUTH & SECURITY) | User Pool + IdP + JWT; PostConfirmation trigger initializes the profile (**handleInitUser**). |
 | **Amazon DynamoDB** | NoSQL database (DATA) | 8 tables: User, Study, Social, Quest, Minigame, ItemData, Inventory, GachaHistory; with Streams enabled. |
@@ -73,19 +73,69 @@ The project uses Serverless Framework (Node.js 20.x) to provision infrastructure
 | **AWS IAM** | Access control | Execution Role attached to Lambda (dashed line on the diagram); least-privilege statements in serverless.yml. |
 | **AWS CloudFormation** | Infrastructure provisioning (via Serverless) | All resources in one Stack; rollback/cleanup in a single operation. |
 
-> **Note on Region/AZ:** The system does not use VPC or EC2, so Availability Zones are not configured manually. AWS manages multi-AZ for managed services (Lambda, DynamoDB, S3) inside region ap-southeast-1.
+> **Note on Region/AZ:** The system does not use VPC or EC2, so Availability Zones are not configured manually. AWS manages multi-AZ for managed services (Lambda, DynamoDB, S3) inside region **ap-southeast-1**.
 
-#### AI and third-party integrations
+**Amazon Cognito User Pool** in the AWS Console (region **ap-southeast-1**):
+
+![Amazon Cognito User Pool](https://res.cloudinary.com/dakqspssm/image/upload/v1774645236/Amazon_Cognito_User_Pool_nngeii.jpg)
+
+**AWS Lambda** in the AWS Console (region **ap-southeast-1**):
+
+![AWS Lambda Functions](https://res.cloudinary.com/dakqspssm/image/upload/v1784648995/amazonlambda_jglp9d.png)
+
+**Amazon DynamoDB** in the AWS Console (region **ap-southeast-1**):
+
+![Amazon DynamoDB Tables](https://res.cloudinary.com/dakqspssm/image/upload/v1784649145/amazonDynamoDB_uqwahe.png)
+
+**Amazon API Gateway** in the AWS Console (region **ap-southeast-1**):
+
+![Amazon API Gateway](https://res.cloudinary.com/dakqspssm/image/upload/v1784653595/Screenshot_2026-07-22_000605_kxfc9s.png)
+
+**Amazon S3** in the AWS Console (region **ap-southeast-1**):
+
+![Amazon S3 Buckets](https://res.cloudinary.com/dakqspssm/image/upload/v1784653963/Screenshot_2026-07-22_000844_qilksc.png)
+
+**AWS CloudFormation** in the AWS Console (region **ap-southeast-1**):
+
+![AWS CloudFormation Stack](https://res.cloudinary.com/dakqspssm/image/upload/v1784654147/Screenshot_2026-07-22_001532_bgryyv.png)
+
+**Amazon CloudFront** in the AWS Console (region **ap-southeast-1**):
+
+![Amazon CloudFront Distribution](https://res.cloudinary.com/dakqspssm/image/upload/v1784654279/Screenshot_2026-07-22_001727_mqaiwu.png)
+
+**AWS IAM** in the AWS Console:
+
+![AWS IAM Roles](https://res.cloudinary.com/dakqspssm/image/upload/v1784654805/Screenshot_2026-07-22_002634_reseat.png)
+
+#### 5.2.5. AI and third-party integrations
 
 On the diagram, integrations outside the main API path are the **EXTERNAL** block (Algolia, Gemini) and **ACCOUNT B — BEDROCK**:
 
 **Algolia (User Search Index — EXTERNAL):** DynamoDB does not support full-text search by username. Algolia was chosen over OpenSearch for a simple API, near-realtime results, and no self-managed cluster. On the diagram this is step **6. Index**: when the User table changes, DynamoDB Streams trigger **streamIndexer** → index documents in Algolia. The Client calls **GET /friends/search** → Lambda queries Algolia and returns results.
 
+**Algolia** — `users` index:
+
+![Algolia users index](https://res.cloudinary.com/dakqspssm/image/upload/v1784654058/aglolia_b1p4ny.jpg)
+
 **Amazon Bedrock (ACCOUNT B — STS from app):** The Client calls Bedrock directly in the secondary account (step **8. AI Bedrock**), using **STS** for temporary credentials — separate from the main Serverless stack. This path does not go through the **ap-southeast-1** HTTP API / Lambda.
+
+**Amazon Bedrock (Account A — main project account)** — allows `sts:AssumeRole` into Account B:
+
+![AssumeCrossAccountBedrockRole](https://res.cloudinary.com/dakqspssm/image/upload/v1784655482/bedrockchinh_mjqjus.jpg)
+
+**Amazon Bedrock** — cross-account role and invoke policy:
+
+![CrossAccountBedrockRole Trust](https://res.cloudinary.com/dakqspssm/image/upload/v1784655080/bedrockB_awtnjw.jpg)
+
+![BedrockInvokePolicy](https://res.cloudinary.com/dakqspssm/image/upload/v1784655079/bedbrockB2_clu7hf.jpg)
+
+**Amazon Bedrock (Account B)** — invoke limited to `nova-micro-v1:0` and `nova-lite-v1:0` only:
+
+![Bedrock OnlyNovaMicro policy](https://res.cloudinary.com/dakqspssm/image/upload/v1784655391/bedrockw_eijijf.jpg)
 
 **Google Gemini API (EXTERNAL):** The Client calls Gemini directly (step **9. Gemini**) to generate study plans and quizzes from uploaded materials. Cloud AI is optional — users can choose **Ollama (Local)** for local execution to protect personal data privacy and eliminate Cloud API token costs (details in section 5.3). Gemini is used only when the user configures their own API Key, so the app does not carry centralized LLM cost.
 
-#### Communication flows between components
+#### 5.2.6. Communication flows between components
 
 The system runs four flow groups, matching the diagram:
 
@@ -101,7 +151,7 @@ The system runs four flow groups, matching the diagram:
 
 **Asset distribution flow (CDN — step 10):** The Client does not call the API to view avatar or item images. It hits CloudFront URLs directly → CloudFront fetches from S3 Assets when needed. Lambda is involved only for presigned upload URLs or processing newly uploaded files.
 
-#### Security configuration and IAM permissions
+#### 5.2.7. Security configuration and IAM permissions
 
 **Least Privilege** is applied strictly through **serverless.yml**. The Lambda Execution Role receives only the Actions it needs on the required Resources:
 
@@ -117,7 +167,7 @@ Two IAM layers must be distinguished in operations:
 
 Sensitive environment variables (**ALGOLIA_WRITE_KEY**, **COGNITO_USER_POOL_ID**, **COGNITO_CLIENT_ID**, etc.) are loaded via **useDotenv: true** from a local **.env** file — never committed to GitHub.
 
-#### Infrastructure setup and deployment process
+#### 5.2.8. Infrastructure setup and deployment process
 
 Bringing the Backend to AWS follows these steps:
 
@@ -135,7 +185,7 @@ Serverless Framework compiles the code (esbuild bundle + minify), generates a Cl
 
 5. **Connect the Frontend:** Update **AWSStudy-Play/.env** so **VITE_API_URL**, **VITE_COGNITO_\***, and **VITE_S3_ASSETS_URL** point to the deployed endpoints.
 
-#### Lambda module split and trigger mechanisms
+#### 5.2.9. Lambda module split and trigger mechanisms
 
 The Backend is split into 10 independent modules; each has its own **function.yml** declaring handlers and trigger types:
 

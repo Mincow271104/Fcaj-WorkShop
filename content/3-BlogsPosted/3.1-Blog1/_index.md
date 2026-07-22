@@ -47,7 +47,7 @@ The post demonstrates a traffic generator against sample apps (Python, Go, Java 
 | **Production event** | 10 minutes, 30 RPS, 25% error rate on java-otel | Detects baseline drift, pinpoints the affected service, analyzes failures, and proposes remediation |
 
 In the incident scenario, the agent can:
-- Identify the impacted application (**java-otel-app**).
+- Identify the impacted application (`java-otel-app`).
 - Break down failure modes (HTTP 500, timeouts, connection refusals, etc.).
 - Correlate CPU/memory spikes with performance degradation.
 - Reconstruct the event timeline and estimate cross-service blast radius.

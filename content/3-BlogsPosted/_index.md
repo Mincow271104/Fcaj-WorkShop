@@ -7,4 +7,7 @@ pre: " <b> 3. </b> "
 ---
 
 ###  [Blog 1 - AI-Powered Event Response for Amazon EKS](3.1-Blog1/)
-This blog introduces **AWS DevOps Agent** — a managed AI agent built on Amazon Bedrock that automates incident detection, root-cause analysis, and remediation recommendations for Amazon EKS by correlating telemetry data with Kubernetes topology.
+This blog summarizes how AWS DevOps Agent uses AI to detect incidents, analyze root causes, and recommend remediation on Amazon EKS, combining Prometheus, CloudWatch, X-Ray, and Kubernetes topology.
+
+###  [Blog 2 - AWS Well-Architected: Hidden Costs in Cloud Architectures](3.2-Blog2/)
+This blog summarizes how the AWS Well-Architected Framework helps uncover hidden cloud costs from security incidents, downtime, and inefficient resource use — and connects those ideas to a serverless student project.
